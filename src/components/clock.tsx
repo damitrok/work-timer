@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+import "./clock.css";
 
 const clock = () => {
-    return (
-        <div>
-            <div> 12 : 50</div>
-        </div>
-    );
+  return (
+    <div className="clock-wrap">
+      <div className="numbers">12 : 50</div>
+    </div>
+  );
 };
 
 export default clock;
