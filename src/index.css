@@ -1,13 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Sora", sans-serif;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+  transition: background-color 200ms linear;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: var(--main-text-color);
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 100vh;
+}
+
+/* dark theme */
+
+html[data-theme="dark"] {
+  --background-color: #0c0032;
+  --main-color: #190061;
+  --secondary-color: #240090;
+  --accent-color: #3500d3;
+  --supporting-color: #282828;
+  --main-text-color: #edf2f8;
+  --box-shadow: rgba(255, 255, 255, 0.2);
+}
+
+/* light theme */
+
+html[data-theme="light"] {
+  --background-color: #D1D0CB;
+  --main-color: #F0D2AE;
+  --secondary-color: #DBBFAA;
+  --accent-color: #DEB192;
+  --main-text-color: #edf2f8;
+  --supporting-color: #A2988F;
+  --box-shadow: rgba(0, 0, 0, 0.2);
 }

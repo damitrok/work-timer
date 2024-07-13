@@ -1,0 +1,17 @@
+.clock-wrap {
+  background-color: var(--main-color);
+  width: 50vh;
+  height: 50vh;
+  margin: 10vh auto;
+  border-radius: 50%;
+  border: 5px solid var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 500ms linear, border-color 500ms linear;
+}
+
+.numbers {
+  font-weight: 600;
+  font-size: 7rem;
+}
