@@ -13,9 +13,11 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={changeTheme} id="chang-theme-button">Change theme</button>
+      <button onClick={changeTheme} id="chang-theme-button">
+        Change theme
+      </button>
       <h1>Welcome to WorkTimer</h1>
-      <Clock />
+      <Clock minutes={0} seconds={5} />
       <ButtonsPanel />
     </div>
   );
